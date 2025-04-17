@@ -4,42 +4,32 @@
       "id": 1,
       "username": "behruz",
       "email": "behruz@example.com",
-      "passwordHash": "$2b$10$behruzHashed",
-      "role": "user",
-      "avatar": "https://example.com/avatars/behruz.jpg",
-      "createdAt": "2025-04-01T08:00:00Z"
+      "role": "user"
     },
     {
       "id": 2,
       "username": "aziz",
       "email": "aziz@example.com",
-      "passwordHash": "$2b$10$azizHashed",
-      "role": "user",
-      "avatar": "https://example.com/avatars/aziz.jpg",
-      "createdAt": "2025-03-10T11:20:00Z"
+      "role": "user"
     },
     {
       "id": 3,
       "username": "admin",
       "email": "admin@example.com",
-      "passwordHash": "$2b$10$adminHashed",
-      "role": "admin",
-      "avatar": "https://example.com/avatars/admin.jpg",
-      "createdAt": "2025-01-01T00:00:00Z"
+      "role": "admin"
     }
   ],
   "accounts": [
-    { "id": 1, "userId": 1, "name": "Карта Tinkoff", "balance": 15000 },
-    { "id": 2, "userId": 2, "name": "Счёт Сбербанк", "balance": 9000 },
-    { "id": 3, "userId": 3, "name": "Корпоративный", "balance": 100000 }
+    { "id": 1, "userId": 1, "name": "Tinkoff", "balance": 15000 },
+    { "id": 2, "userId": 1, "name": "Наличные", "balance": 5000 },
+    { "id": 3, "userId": 2, "name": "Сбербанк", "balance": 9000 }
   ],
   "categories": [
     { "id": 1, "name": "Продукты" },
-    { "id": 2, "name": "Одежда" },
-    { "id": 3, "name": "Зарплата" },
-    { "id": 4, "name": "Фриланс" },
-    { "id": 5, "name": "Развлечения" },
-    { "id": 6, "name": "Подарки" }
+    { "id": 2, "name": "Зарплата" },
+    { "id": 3, "name": "Развлечения" },
+    { "id": 4, "name": "Подарки" },
+    { "id": 5, "name": "Транспорт" }
   ],
   "transactions": [
     {
@@ -50,7 +40,7 @@
       "amount": 1200,
       "categoryId": 1,
       "date": "2025-04-17",
-      "description": "Продукты в Ашане"
+      "description": "Продукты в магазине"
     },
     {
       "id": 2,
@@ -58,77 +48,54 @@
       "userId": 1,
       "accountId": 1,
       "amount": 20000,
-      "categoryId": 3,
+      "categoryId": 2,
       "date": "2025-04-15",
       "description": "Зарплата"
     },
     {
       "id": 3,
       "type": "expense",
-      "userId": 2,
+      "userId": 1,
       "accountId": 2,
-      "amount": 3000,
-      "categoryId": 2,
-      "date": "2025-04-12",
-      "description": "Кроссовки"
+      "amount": 500,
+      "categoryId": 3,
+      "date": "2025-04-14",
+      "description": "Кино"
     },
     {
       "id": 4,
-      "type": "income",
+      "type": "expense",
       "userId": 2,
-      "accountId": 2,
-      "amount": 8000,
+      "accountId": 3,
+      "amount": 3500,
       "categoryId": 4,
-      "date": "2025-04-10",
-      "description": "Фриланс заказ"
+      "date": "2025-04-12",
+      "description": "Подарок другу"
     },
     {
       "id": 5,
-      "type": "expense",
-      "userId": 3,
+      "type": "income",
+      "userId": 2,
       "accountId": 3,
-      "amount": 5000,
-      "categoryId": 6,
-      "date": "2025-04-01",
-      "description": "Подарок сотруднику"
-    }
-  ],
-  "debts": [
-    {
-      "id": 1,
-      "userId": 1,
-      "amount": 4000,
-      "person": "Иброҳим",
-      "type": "owe",
-      "date": "2025-04-01",
-      "dueDate": "2025-05-01",
-      "description": "Одолжил на такси"
+      "amount": 8000,
+      "categoryId": 2,
+      "date": "2025-04-10",
+      "description": "Фриланс"
     },
     {
-      "id": 2,
-      "userId": 2,
-      "amount": 2500,
-      "person": "Бехруз",
-      "type": "lent",
-      "date": "2025-04-02",
-      "dueDate": "2025-04-30",
-      "description": "Занял другу"
-    }
-  ],
-  "transfers": [
-    {
-      "id": 1,
+      "id": 6,
+      "type": "expense",
       "userId": 1,
-      "fromAccountId": 1,
-      "toAccountId": 1,
-      "amount": 1000,
-      "date": "2025-04-14",
-      "description": "Перевод между счетами (тест)"
+      "accountId": 1,
+      "amount": 400,
+      "categoryId": 5,
+      "date": "2025-04-08",
+      "description": "Метро"
     }
   ],
   "profile": {
     "currency": "RUB",
     "language": "ru",
-    "theme": "light"
+    "theme": "dark"
   }
 }
