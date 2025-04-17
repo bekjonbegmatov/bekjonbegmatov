@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "behruz",
+      "email": "behruz@example.com",
+      "passwordHash": "$2b$10$behruzHashed",
+      "role": "user",
+      "avatar": "https://example.com/avatars/behruz.jpg",
+      "createdAt": "2025-04-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "username": "aziz",
+      "email": "aziz@example.com",
+      "passwordHash": "$2b$10$azizHashed",
+      "role": "user",
+      "avatar": "https://example.com/avatars/aziz.jpg",
+      "createdAt": "2025-03-10T11:20:00Z"
+    },
+    {
+      "id": 3,
+      "username": "admin",
+      "email": "admin@example.com",
+      "passwordHash": "$2b$10$adminHashed",
+      "role": "admin",
+      "avatar": "https://example.com/avatars/admin.jpg",
+      "createdAt": "2025-01-01T00:00:00Z"
+    }
+  ],
+  "accounts": [
+    { "id": 1, "userId": 1, "name": "Карта Tinkoff", "balance": 15000 },
+    { "id": 2, "userId": 2, "name": "Счёт Сбербанк", "balance": 9000 },
+    { "id": 3, "userId": 3, "name": "Корпоративный", "balance": 100000 }
+  ],
+  "categories": [
+    { "id": 1, "name": "Продукты" },
+    { "id": 2, "name": "Одежда" },
+    { "id": 3, "name": "Зарплата" },
+    { "id": 4, "name": "Фриланс" },
+    { "id": 5, "name": "Развлечения" },
+    { "id": 6, "name": "Подарки" }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "type": "expense",
+      "userId": 1,
+      "accountId": 1,
+      "amount": 1200,
+      "categoryId": 1,
+      "date": "2025-04-17",
+      "description": "Продукты в Ашане"
+    },
+    {
+      "id": 2,
+      "type": "income",
+      "userId": 1,
+      "accountId": 1,
+      "amount": 20000,
+      "categoryId": 3,
+      "date": "2025-04-15",
+      "description": "Зарплата"
+    },
+    {
+      "id": 3,
+      "type": "expense",
+      "userId": 2,
+      "accountId": 2,
+      "amount": 3000,
+      "categoryId": 2,
+      "date": "2025-04-12",
+      "description": "Кроссовки"
+    },
+    {
+      "id": 4,
+      "type": "income",
+      "userId": 2,
+      "accountId": 2,
+      "amount": 8000,
+      "categoryId": 4,
+      "date": "2025-04-10",
+      "description": "Фриланс заказ"
+    },
+    {
+      "id": 5,
+      "type": "expense",
+      "userId": 3,
+      "accountId": 3,
+      "amount": 5000,
+      "categoryId": 6,
+      "date": "2025-04-01",
+      "description": "Подарок сотруднику"
+    }
+  ],
+  "debts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "amount": 4000,
+      "person": "Иброҳим",
+      "type": "owe",
+      "date": "2025-04-01",
+      "dueDate": "2025-05-01",
+      "description": "Одолжил на такси"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "amount": 2500,
+      "person": "Бехруз",
+      "type": "lent",
+      "date": "2025-04-02",
+      "dueDate": "2025-04-30",
+      "description": "Занял другу"
+    }
+  ],
+  "transfers": [
+    {
+      "id": 1,
+      "userId": 1,
+      "fromAccountId": 1,
+      "toAccountId": 1,
+      "amount": 1000,
+      "date": "2025-04-14",
+      "description": "Перевод между счетами (тест)"
+    }
+  ],
+  "profile": {
+    "currency": "RUB",
+    "language": "ru",
+    "theme": "light"
+  }
+}
