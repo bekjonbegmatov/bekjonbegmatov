@@ -8,10 +8,10 @@
 
 🔧 **Tech Stack:**
 - **Languages:** Python, JavaScript, TypeScript, C++, Go.  
-- **Frameworks & Libraries:** Django, Flask, FastAPI, React, Next.js, Node.js.  
-- **DevOps & Cloud:** Docker, Kubernetes, Terraform, AWS, Google Cloud, CI/CD (GitHub Actions, GitLab CI).  
+- **Frameworks & Libraries:** Django, Flask, FastAPI, React, Node.js.  
+- **DevOps & Cloud:** Docker, Google Cloud, CI/CD (GitHub Actions, GitLab CI).  
 - **Databases:** PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch.  
-- **Other Tools:** REST API, GraphQL, WebSocket, gRPC, RabbitMQ, Nginx, Webpack.  
+- **Other Tools:** REST API, GraphQL, WebSocket, Nginx, .  
 
 🌐 **Current Project:**
 - **DeltaVPN**: [deltavpn.ru](https://deltavpn.ru)  
